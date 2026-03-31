@@ -123,7 +123,7 @@ class Program
             Console.WriteLine("══════════════════════════════════════");
             Console.WriteLine("  1. Registrar paciente general       ");
             Console.WriteLine("  2. Registrar paciente urgencias     ");
-            Console.WriteLine("  3. Registrar paciente crónico       ");
+            Console.WriteLine("  3. Registrar paciente cronico       ");
             Console.WriteLine("  4. Listar todos los pacientes       ");
             Console.WriteLine("  0. Salir                            ");
             Console.WriteLine("══════════════════════════════════════");
@@ -170,13 +170,13 @@ class Program
         Console.WriteLine("\n── Paciente Urgencias ──");
         pacientes.Add(new PacienteUrgencias(
             Pedir("Nombre"), Pedir("Cedula"), PedirEntero("Edad"),
-            Pedir("Teléefono"), Pedir("Grupo sanguineo"), Pedir("Motivo de urgencia")));
+            Pedir("Telefono"), Pedir("Grupo sanguineo"), Pedir("Motivo de urgencia")));
         Console.WriteLine("   Registrado correctamente");
     }
 
     static void RegistrarCronico()
     {
-        Console.WriteLine("\n── Paciente Crónico ──");
+        Console.WriteLine("\n── Paciente Cronico ──");
         pacientes.Add(new PacienteCronico(
             Pedir("Nombre"), Pedir("Cedula"), PedirEntero("Edad"),
             Pedir("Telefono"), Pedir("Grupo sanguineo"),
